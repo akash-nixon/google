@@ -28,8 +28,8 @@ public class TodoController {
         return todoService.GetTask(id);
     }
 
-    @RequestMapping(method= RequestMethod.PUT,value="/task/{s_no}")
-    public void updateTask(@RequestBody Todo todo, @PathVariable int s_no){
+    @RequestMapping(method= RequestMethod.PUT,value="/task/{id}")
+    public void updateTask(@RequestBody Todo todo, @PathVariable Long id){
         todoService.UpdateTask(todo);
     }
 

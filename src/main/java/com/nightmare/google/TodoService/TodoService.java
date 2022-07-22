@@ -30,7 +30,6 @@ public class TodoService {
 
     public void DeleteTask(long id) {
         todoRepository.deleteById(id);
-
     }
     public void UpdateTask (Todo todo){
         todoRepository.save(todo);
@@ -39,4 +38,6 @@ public class TodoService {
         todoRepository.save(todo);
     }
     }
+
+
 
